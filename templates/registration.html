@@ -1,0 +1,67 @@
+<!-- The following HTML code is for the "Registration" page of a website -->
+<html>
+<head>
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" href="static/css.css">  <!-- Link to an external CSS stylesheet -->
+<style>
+body{
+    background-image: url("/static/login\ pic.jpg");  /* Background image for the page */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1920px 970px;
+}
+</style>
+</head>
+<body>
+
+<img class="dom_logo" src="/static/logo-no-background.png">  <!-- Displaying the website logo -->
+<br>
+<div class="header">            
+  <div class="nav">
+    <a style="font-size: 30px;" href="/">Home</a>  <!-- Navigation links to other pages -->
+    <a style="font-size: 30px;" href="/contact">Contact Us</a>
+    <a style="font-size: 30px;" href="/about">About Us</a>
+    <a style="font-size: 30px;" href="/reviews">Reviews</a>
+    <a style="font-size: 30px;" href="">Settings</a>
+    <a style="font-size: 30px;" href="/signin">Sign In</a>
+  </div>
+</div>
+
+<!-- content varies for each page from here -->
+<div id="contentOne"></div>
+<div id="contentTwo" class="center-menu">
+
+{% if msg %}
+  <br>
+  <br>
+  <p style="color:red; font-size: larger; font-weight: bolder; background-color: white; padding: 5px; border-radius: 5px; border: solid 1px black; text-align: center;">{{ msg }}</p>
+  <!-- Alternatively, you can use the commented-out styling below -->
+  <!--<p style=" font-weight: bolder; font-size: larger; padding: 15px; background-color: beige; color: red; opacity: 0.9; border-radius: 5px; text-align: center;">{{ msg }}</p>-->
+{% endif %}
+        
+<form method="post" action="/registertheuser"><br><br>
+  <table border="1" style="background-color: beige; opacity: 0.9; border-radius: 5px;">
+    <td>
+      <table style="padding: 25px;">
+        <tr>
+          <td>
+            <p style="text-align: center; font-size: large; margin-top: -15px;"><b>Please Register to make a booking.</b></p><br>
+            <input type="email" name="email" placeholder="Email" required style="width: 250px; height: 35px; border-radius: 5px;">
+          </td><br><br>
+        </tr>
+        <tr>
+          <td><br><br><input type="password" name="password" placeholder="Password" required style="width: 250px; height: 35px; border-radius: 5px;"></td>
+        </tr>
+        <tr>
+          <td><br><br><input type="password" name="confirmpassword" placeholder="Retype Password" required style="width: 250px; height: 35px; border-radius: 5px;"></td>
+        </tr>
+        <tr>
+          <td><br><br><center><input type="submit" name="submit" value="Submit" style="width: 150px; height: 35px; cursor: pointer; border-radius: 5px; font-size: medium;"></center><br></td>
+        </tr>
+      </table>
+    </td>
+  </table>
+</form>
+
+</body>
+</html>

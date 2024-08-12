@@ -1,0 +1,157 @@
+<!-- The following HTML code is for the "Reviews" page of a website -->
+<html>
+<head>
+<title>Reviews</title>
+<link rel="stylesheet" type="text/css" href="static/css.css">  <!-- Link to an external CSS stylesheet -->
+<style>
+/* Styling for table cells and body background */
+td{
+  padding: 15px;  /* Adds spacing to table cells */
+}
+body{
+  background-image: url("/static/reviews.jpg");  /* Background image for the page */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1920px 970px;
+}
+</style>
+</head>
+<body>
+
+<!-- Header Section -->
+<img class="dom_logo" src="/static/logo-no-background.png">  <!-- Displaying the website logo -->
+<br>
+<div class="header">            
+  <div class="nav">
+    <a style="font-size: 30px;" href="/">Home</a>  <!-- Navigation links to other pages -->
+    <a style="font-size: 30px;" href="/contact">Contact Us</a>
+    <a style="font-size: 30px;" href="/about">About Us</a>
+    <a style="font-size: 30px;" class="active" href="/reviews">Reviews</a>  <!-- Current page is highlighted as "active" -->
+    <a style="font-size: 30px;" href="">Settings</a>
+    <a style="font-size: 30px;" href="/signin">Sign In</a>
+  </div>
+</div>
+
+<!-- content varies for each page from here -->
+<div id="contentOne"></div>
+<div id="contentTwo" class="center-menu">
+<br><br>
+<form action="reviewsubmission" method="post">
+<table class="dom_content_area" border="2" style="opacity: 0.9; background-color: beige; width: 70%;">
+  <tr>
+    <td style="padding: 40px; font-size: 22px;">
+      <p style="font-size: xx-large;">Tripadvisor Reviews</p><br>
+      <table>
+        <tr style="padding: 0px 15px;">
+          <td>
+            <!-- Reviewer 1 -->
+            <img class="and_image" src="/static/Default User Pic.png" height="100">
+            <span style="font-size: larger; text-align: center; font-weight: bold;">John Smith</span>
+            <img class="and_image" src="/static/Five Stars.png" height="20">
+            <span style="font-size: smaller; text-align: center; color: grey;">14-11-2023</span><br>
+            <span>Fantastic service! Quick response time, great prices and rapid response to all my questions!</span>
+          </td>
+          <td>
+            <!-- Reviewer 2 -->
+            <img class="and_image" src="/static/Default User Pic.png" height="100">
+            <span style="font-size: larger; text-align: center; font-weight: bold;">Ellis Watt</span>
+            <img class="and_image" src="/static/Five Stars.png" height="20">
+            <span style="font-size: smaller; text-align: center; color: grey;">13-11-2023</span><br>
+            <span>Extremely useful for those organising business trips, that need to get to one place quickly and efficiently.</span>
+          </td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+          <td>
+            <!-- Reviewer 3 -->
+            <img class="and_image" src="/static/Default User Pic.png" height="100">
+            <span style="font-size: larger; text-align: center; font-weight: bold;">Lauriel</span>
+            <img class="and_image" src="/static/Four Stars.png" height="20">
+            <span style="font-size: smaller; text-align: center; color: grey;">29-10-2023</span><br>
+            <span>Easy to use, and very convenient when planning my trip abroad, saving time and stress for the organisation.</span>
+          </td>
+          <td>
+            <!-- Reviewer 4 -->
+            <img class="and_image" src="/static/Default User Pic.png" height="100">
+            <span style="font-size: larger; text-align: center; font-weight: bold;">Andrew Smith</span>
+            <img class="and_image" src="/static/Five Stars.png" height="20">
+            <span style="font-size: smaller; text-align: center; color: grey;">22-11-2023</span><br>
+            <span>Thank you, thank you so much! I used to get such bad headaches for organising the holidays! So much better with this!</span>
+          </td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+          <td>
+            <!-- Reviewer 5 -->
+            <img class="and_image" src="/static/Default User Pic.png" height="100">
+            <span style="font-size: larger; text-align: center; font-weight: bold;">Zara</span>
+            <img class="and_image" src="/static/Five Stars.png" height="20">
+            <span style="font-size: smaller; text-align: center; color: grey;">12-09-2023</span><br>
+            <span>My family and I had a fantastic time on our holiday! Everything went perfectly, no hiccups, no stress just pure bliss for us.</span>
+          </td>
+          <td>
+            <!-- Reviewer 6 -->
+            <img class="and_image" src="/static/Default User Pic.png" height="100">
+            <span style="font-size: larger; text-align: center; font-weight: bold;">Emily Watson</span>
+            <img class="and_image" src="/static/Four Stars.png" height="20">
+            <span style="font-size: smaller; text-align: center; color: grey;">11-09-2023</span><br>
+            <span>Slight issue with where some admin error caused some confusion, but otherwise, brilliant!</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<br><br>
+<table class="dom_content_area" border="2" style="opacity: 0.9; background-color: beige; width: 70%;">
+  <tr>
+    <td>
+        <table width="100%" border="0" style="padding: 25px;">
+          <tr>
+            <td colspan="2">
+              <p style="font-size: x-large;">Kindly share a feedback of your experience with us!</p>
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 15px 15px; font-size: 18px;"><label style="font-weight: bold;">Name: </label> </td>
+            <td><input style="width: 400px; height: 35px; border-radius: 5px;" type="text" name="name" required></td>
+          </tr>
+          <tr>
+            <td style="padding: 15px 15px; font-size: 18px;"><label style="font-weight: bold;">Email: </label> </td>
+            <td><input style="width: 400px; height: 35px; border-radius: 5px;" type="email" name="email" required></td>
+          </tr>
+          <tr>
+           
+            <td style="padding: 15px 15px; font-size: 18px;"><label style="font-weight: bold;">Rating: </label> </td>
+           
+            <td>
+              <input  type="radio" name="type" /><label style="display: inline; padding-right: 25px;" for="one"><b>1 (Poor)</b></label>
+              <input  type="radio" name="type" /><label style="display: inline; padding-right: 25px;" for="two"><b>2 (Unsatisfactory)</b></label>
+              <input  type="radio" name="type" /><label style="display: inline; padding-right: 25px;" for="three"><b>3 (Satisfactory)</b></label>
+              <input  type="radio" name="type" /><label style="display: inline; padding-right: 25px;" for="four"><b>4 (Very Satisfactory)</b></label>
+              <input  type="radio" name="type" /><label style="display: inline; padding-right: 25px;" for="five"><b>5 (Outstanding)</b></label>
+             
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 15px; vertical-align: top; font-size: 18px;"><label style="font-weight: bold;">Review: </label></td>
+            <td style="padding: 15px;"><textarea id="tripreview" name="review" rows="10" cols="100" style="border-radius: 5px; border: 2px solid black;" required></textarea></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">
+              <br>
+              <input style="font-size: medium; border-radius: 5px; width: 150px; height: 35px; cursor: pointer;" type="submit" name="submit" value="Submit Review">
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+</table>
+<br><br>
+</form>
+</div>
+
+</body>
+</html>

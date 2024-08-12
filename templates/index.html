@@ -1,0 +1,123 @@
+<!-- The following HTML code is for the "Home Page" of a website -->
+<html>
+<head>
+<title>Home Page</title>
+<!-- <link href="{{url_for('static', filename='RegForm.css')}}" rel="stylesheet" type="text/css" > -->    
+<link rel="stylesheet" type="text/css" href="static/css.css">  <!-- Link to an external CSS stylesheet -->
+<style>
+body{
+    background-image: url("/static/landscape.avif");  /* Background image for the page */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1920px 970px;
+}
+</style>
+</head>
+<body>
+<img class="dom_logo" src="/static/logo-no-background.png">  <!-- Displaying the website logo -->
+<br>
+<div class="header">            
+  <div class="nav">
+    <a style="font-size: 30px;" class="active" href="#">Home</a>  <!-- Current page is highlighted as "active" -->
+    <a style="font-size: 30px;" href="/contact">Contact Us</a>
+    <a style="font-size: 30px;" href="/about">About Us</a>
+    <a style="font-size: 30px;" href="/reviews">Reviews</a>
+    <a style="font-size: 30px;" href="">Settings</a>
+    <a style="font-size: 30px;" href="/signin">Sign In</a>
+  </div>
+</div>
+
+<!-- content varies for each page from here -->
+<div id="contentOne"></div>
+<div id="contentTwo" class="center-menu">
+<form action="/searchresults" method="post">
+<br><br>
+<table border="2" style="width: 100%; background-color: beige; opacity: 0.9;">
+    <tr>
+        <td>
+            <table border="0" style="width: 100%; text-align: center;">
+                <tr>
+                    <td style="font-size:x-large; padding: 5px;"><br>
+                        <input  type="radio" name="type" id="roundtrip" value="roundtrip" /><label style="display: inline; padding-right: 25px;" for="track">Round Trip</label>
+                        <input  type="radio" name="type" id="oneway" value="oneway"  /><label style="display: inline; padding-right: 25px;" for="event">One Way</label>
+                        <input  type="radio" name="type" id="multi" value="multi" /><label style="display: inline;" for="message">Multi City</label>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td style="padding-left: 15px;"><br><br>
+                        <span style="font-size: larger;">From:</span> 
+                        <br>
+                        <select name="ddlDepartCity" required style="width: 200px; height: 35px; border-radius: 5px;">
+                            <option selected="true" name="departcity">Departure City</option>
+                            <option name="auckland">Auckland</option>
+                            <option name="christchurch">Christchurch</option>
+                            <option name="wellington">Wellington</option>
+                            <option name="queenstown">Queenstown</option>
+                            <option name="dunedin">Dunedin</option>
+                            <option name="whangerei">Whangerei</option>
+                        </select>
+                    </td>
+                    <td><br><br>
+                        <span style="font-size: larger;">To:</span> 
+                        <br>
+                        <select name="ddlDetinationCity" required style="width: 200px; height: 35px; border-radius: 5px;">
+                            <option selected="true" name="destinationcity">Destination City</option>
+                            <option name="sydney">Sydney</option>
+                            <option name="brisbane">Brisbane</option>
+                            <option name="perth">Perth</option>
+                            <option name="melbourne">Melbourne</option>
+                            <option name="gold coast">Gold Coast</option>
+                            <option name="new caledonia">New Caledonia</option>
+                            <option name="act">ACT</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 200px; height: 35px; border-radius: 5px; padding-left: 15px;"><br><br>
+                        <span style="font-size: larger;">Leave date: </span>
+                        <br>
+                        <input type="date" name="leavedate" placeholder="DD/MM/YYYY" required style="width: 200px; height: 35px; border-radius: 5px;">
+                    </td>
+                    <td><br><br>
+                        <span style="font-size: larger;">Return date:</span> 
+                        <br>
+                        <input type="date" name="returndate" placeholder="DD/MM/YYYY" required style="width: 200px; height: 35px; border-radius: 5px;">
+                    </td>
+                    <td style="padding-right: 15px;"><br><br>
+                        <span style="font-size: larger;">Class:</span> 
+                        <br>
+                        <select name="ddlClass" required style="width: 200px; height: 35px; border-radius: 5px;">
+                            <option name="first">First</option>
+                            <option name="business">Business</option>
+                            <option name="premium economy">Premium Economy</option>
+                            <option selected="true" name="economy">Economy</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px;">
+                        <input type="checkbox" name="departFlex"> Flexible
+                    </td>
+                    <td>
+                        <input type="checkbox" name="returnFlex"> Flexible
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;"><br><br>
+                        <input type="submit" name="submit" value="Search" style="width: 150px; height: 35px; border-radius: 5px; font-size: large;">
+                    </td>
+                </tr>
+                <tr>
+                    <td><br><br></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</form>
+</div>
+
+</body>
+</html>
