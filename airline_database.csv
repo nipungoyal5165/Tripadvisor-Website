@@ -1,0 +1,5 @@
+DepartureCity,DestinationCity,Airline,Cost
+Auckland,Brisbane,JetStar,1000
+Auckland,Sydney,Air Asia,500
+Auckland,ChristChurch,JetStar,700
+Auckland,Wellington,JetStar,800
