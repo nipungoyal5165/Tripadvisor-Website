@@ -1,0 +1,93 @@
+/* CSS styles for the website's layout and design */
+
+/* Styles for elements with the class "dom_one" */
+.dom_one {
+    padding: 20px; /* Adjust the padding value as needed */
+}
+
+/* Styles for elements with the class "dom_button" */
+.dom_button {
+    padding: 5px 15px; /* Padding for buttons */
+    cursor: pointer; /* Display a pointer cursor on hover */
+    border: 1 solid; /* Add a border with undefined color (replace with actual color) */
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+/* Styles for elements with the class "dom_table_design" */
+.dom_table_design {
+    padding: 20px 20px; /* Padding for tables */
+    margin-left: auto; /* Center the table horizontally */
+    margin-right: auto; /* Center the table horizontally */
+}
+
+/* Styles for elements with the class "dom_logo" */
+.dom_logo {
+    display: block; /* Display as a block element */
+    margin-left: auto; /* Center the element horizontally */
+    margin-right: auto; /* Center the element horizontally */
+    width: 20%; /* Set the width of the logo (adjust as needed) */
+}
+
+/* Styles for elements with the class "and_image" */
+.and_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles for elements with the class "center-menu" */
+.center-menu {
+    display: table; /* Display as a table to center content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Styles for elements with the class "dom_menu_large_text" */
+.dom_menu_large_text {
+    font-size: x-large; /* Set the font size to x-large (adjust as needed) */
+}
+
+/* Styles for elements with the class "dom_content_area" */
+.dom_content_area {
+    margin: 0 auto; /* Center the content horizontally */
+    width: 60%; /* Set the width of the content area (adjust as needed) */
+}
+
+/* Styles for the website header with the class "header" */
+.header {
+    overflow: hidden; /* Clear floated elements within the header */
+    background-color: #fdfdfd; /* Background color of the header */
+    padding: 10px 0px; /* Padding for the header */
+    opacity: 0.8; /* Set opacity (adjust as needed) */
+    width: fit-content; /* Fit the width to the content */
+    margin: auto; /* Center the header horizontally */
+    border-radius: 5px; /* Rounded corners for the header */
+}
+
+/* Styles for links within the header */
+.header a {
+    color: black; /* Text color for links */
+    text-align: center;
+    padding: 20px 40px; /* Padding for links (adjust as needed) */
+    text-decoration: none; /* Remove underlines from links */
+    font-size: 18px; /* Set the font size (adjust as needed) */
+    line-height: 25px; /* Set the line height (adjust as needed) */
+    border-radius: 4px; /* Rounded corners for links */
+}
+
+/* Styles for links within the header on hover */
+.header a:hover {
+    background-color: rgb(156, 156, 156); /* Background color on hover (adjust as needed) */
+    color: rgb(0, 0, 0); /* Text color on hover (adjust as needed) */
+}
+
+/* Styles for the active link within the header */
+.header a.active {
+    background-color: dodgerblue; /* Background color for the active link */
+    color: white; /* Text color for the active link */
+}
+
+/* Styles for the navigation menu with the class "nav" */
+.nav {
+    text-align: center; /* Center-align the menu items */
+    padding: 15px; /* Padding for menu items */
+}
